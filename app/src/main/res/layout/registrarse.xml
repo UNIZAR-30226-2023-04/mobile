@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="20dp"
+    android:paddingVertical="20dp"
+    >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20sp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gris"
+            android:text="Hola,"
+            android:fontFamily="@font/inter"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/inter_bold"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:text="¡Únete!"
+            android:textSize="45sp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+
+    <LinearLayout
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:fontFamily="@font/inter"
+            android:hint="Mail"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:paddingTop="20sp"
+            app:backgroundTint="@color/azul" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre"
+            android:fontFamily="@font/inter"
+            android:inputType="text"
+            android:minHeight="48dp"
+            app:backgroundTint="@color/azul"
+            tools:ignore="TouchTargetSizeCheck"
+            android:paddingTop="20sp"
+            android:autofillHints="" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/inter"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:paddingTop="20sp"
+            app:backgroundTint="@color/azul" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/inter"
+            android:hint="Verificar contraseña"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:paddingTop="20sp"
+            app:backgroundTint="@color/azul"
+        />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:fontFamily="@font/inter"
+            android:background="@drawable/fondo_azul_redondo"
+            android:text="REGISTRARSE"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gris"
+            android:text="¿Ya tienes cuenta?"
+            android:fontFamily="@font/inter"
+            android:textSize="15sp"
+            android:layout_marginBottom="10sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/azul"
+            android:fontFamily="@font/inter"
+            android:paddingLeft="5sp"
+            android:text="Inicia sesión"
+            android:textSize="15sp"
+            android:layout_marginBottom="10sp" />
+    </LinearLayout>
+</LinearLayout>
